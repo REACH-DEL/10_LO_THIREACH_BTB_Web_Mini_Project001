@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Details</title>
+    <link rel="stylesheet" href="./styles/output.css" />
+  </head>
+  <body class="bg-[#f9f9f9]">
+    <header class="p-0 m-0 w-screen">
+      <nav
+        class="bg-white border-gray-200 fixed top-0 w-screen h-18 left-0 xl:px-50 lg:px-30 px-10 z-10"
+      >
+        <div class="w-full flex flex-wrap justify-between mx-auto p-4">
+          <h1 class="text-2xl font-PTserif font-bold text-black">
+            Blog<span class="text-[#FB743E]">y.</span>
+          </h1>
+
+          <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+          <label
+            for="menu-toggle"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 cursor-pointer"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </label>
+
+          <div
+            class="hidden peer-checked:block w-full lg:block md:w-auto"
+            id="navbar-default"
+          >
+            <ul
+              class="text-sm font-poppin flex flex-col md:items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FB743E] md:p-0 active:text-red-600"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FB743E] md:p-0 active:text-red-600"
+                  >Travel</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FB743E] md:p-0 active:text-red-600"
+                  >Food</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FB743E] md:p-0 active:text-red-600"
+                  >Lifestyle</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FB743E] md:p-0 active:text-red-600"
+                  >Fashion</a
+                >
+              </li>
+              <li class="relative mt-4 md:mt-0">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  type="text"
+                  class="w-full py-2 pl-10 pr-4 text-gray-700 bg-gray-100 border-none focus:border-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-[#FB743E]"
+                  placeholder="Search"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="pt-18">
+      <section id="home" class="w-screen relative">
+        <img
+          class="object-cover md:h-auto h-70 w-full"
+          src="./../assets/images/image6.png"
+          alt=""
+        />
+        <div class="xl:px-50 lg:px-30 px-10">
+          <article
+            class="border-white bg-white lg:max-w-250 md:max-w-150 max-w-80 h-auto shadow-xs duration-500 hover:-translate-y-3 absolute md:-bottom-25 -bottom-40"
+          >
+            <div class="p-6 sm:p-8">
+              <p
+                class="flex items-center text-[0.8rem] text-gray-500 font-poppin"
+              >
+                <span class="text-[#FB743E] mr-2"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 12h14"
+                    />
+                  </svg>
+                </span>
+                Interior
+              </p>
+              <a href="#">
+                <h3
+                  class="lg:text-6xl md:text-4xl text-2xl text-gray-900 font-PTserif font-bold"
+                >
+                  20 essential skills for successful web designers
+                </h3>
+              </a>
+              <div
+                class="mt-6 flex md:justify-between md:flex-row flex-col gap-3"
+              >
+                <div class="flex gap-4 items-center h-fit">
+                  <div
+                    class="min-w-[30px] min-h-[30px] rounded-full bg-gray-300"
+                  ></div>
+                  <p class="font-poppin text-black md:text-md text-sm">
+                    Kadin Dias
+                  </p>
+                  <p
+                    class="text-md text-gray-500 font-poppin md:text-md text-sm"
+                  >
+                    • March 25, 2021
+                  </p>
+                  <p
+                    class="text-md text-gray-500 font-poppin md:text-md text-sm"
+                  >
+                    • 4 min read
+                  </p>
+                </div>
+                <div class="flex gap-3 md:justify-end justify-start">
+                  <div
+                    class="w-[30px] h-[30px] rounded-full bg-gray-200 flex justify-center items-center p-4 duration-500 hover:scale-120 hover:bg-gray-300"
+                  >
+                    <span
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1_269)">
+                          <path
+                            d="M10.6645 2.65667H12.1252V0.112667C11.8732 0.078 11.0065 0 9.99718 0C7.89118 0 6.44851 1.32467 6.44851 3.75933V6H4.12451V8.844H6.44851V16H9.29785V8.84467H11.5278L11.8818 6.00067H9.29718V4.04133C9.29785 3.21933 9.51918 2.65667 10.6645 2.65667Z"
+                            fill="#272343"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_269">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+                  <div
+                    class="w-[30px] h-[30px] rounded-full bg-gray-200 flex justify-center items-center p-4 duration-500 hover:scale-120 hover:bg-gray-300"
+                  >
+                    <span
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1_273)">
+                          <path
+                            d="M16 3.039C15.405 3.3 14.771 3.473 14.11 3.557C14.79 3.151 15.309 2.513 15.553 1.744C14.919 2.122 14.219 2.389 13.473 2.538C12.871 1.897 12.013 1.5 11.077 1.5C9.261 1.5 7.799 2.974 7.799 4.781C7.799 5.041 7.821 5.291 7.875 5.529C5.148 5.396 2.735 4.089 1.114 2.098C0.831 2.589 0.665 3.151 0.665 3.756C0.665 4.892 1.25 5.899 2.122 6.482C1.595 6.472 1.078 6.319 0.64 6.078C0.64 6.088 0.64 6.101 0.64 6.114C0.64 7.708 1.777 9.032 3.268 9.337C3.001 9.41 2.71 9.445 2.408 9.445C2.198 9.445 1.986 9.433 1.787 9.389C2.212 10.688 3.418 11.643 4.852 11.674C3.736 12.547 2.319 13.073 0.785 13.073C0.516 13.073 0.258 13.061 0 13.028C1.453 13.965 3.175 14.5 5.032 14.5C11.068 14.5 14.368 9.5 14.368 5.166C14.368 5.021 14.363 4.881 14.356 4.742C15.007 4.28 15.554 3.703 16 3.039Z"
+                            fill="#272343"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_273">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+                  <div
+                    class="w-[30px] h-[30px] rounded-full bg-gray-200 flex justify-center items-center p-4 duration-500 hover:scale-120 hover:bg-gray-300"
+                  >
+                    <span
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1_279)">
+                          <path
+                            d="M8.21733 0C3.83133 0.000666667 1.5 2.81067 1.5 5.87467C1.5 7.29533 2.294 9.068 3.56533 9.63C3.928 9.79333 3.88 9.594 4.192 8.40067C4.21667 8.30133 4.204 8.21533 4.124 8.12267C2.30667 6.02067 3.76933 1.69933 7.958 1.69933C14.02 1.69933 12.8873 10.0873 9.01267 10.0873C8.014 10.0873 7.27 9.30333 7.50533 8.33333C7.79067 7.178 8.34933 5.936 8.34933 5.10333C8.34933 3.00467 5.22267 3.316 5.22267 6.09667C5.22267 6.956 5.52667 7.536 5.52667 7.536C5.52667 7.536 4.52067 11.6 4.334 12.3593C4.018 13.6447 4.37667 15.7253 4.408 15.9047C4.42733 16.0033 4.538 16.0347 4.6 15.9533C4.69933 15.8233 5.91533 14.0887 6.256 12.8347C6.38 12.378 6.88867 10.5247 6.88867 10.5247C7.224 11.13 8.19067 11.6367 9.22067 11.6367C12.2847 11.6367 14.4993 8.94333 14.4993 5.60133C14.4887 2.39733 11.7467 0 8.21733 0V0Z"
+                            fill="#272343"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_279">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+                  <div
+                    class="w-[30px] h-[30px] rounded-full bg-gray-200 flex justify-center items-center p-4 duration-500 hover:scale-120 hover:bg-gray-300"
+                  >
+                    <span
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1_283)">
+                          <path
+                            d="M9.99984 4.66663H11.9998C12.4376 4.66663 12.871 4.75285 13.2754 4.92036C13.6799 5.08788 14.0473 5.33341 14.3569 5.64294C14.6664 5.95247 14.9119 6.31993 15.0794 6.72435C15.247 7.12877 15.3332 7.56222 15.3332 7.99996C15.3332 8.4377 15.247 8.87115 15.0794 9.27557C14.9119 9.67999 14.6664 10.0475 14.3569 10.357C14.0473 10.6665 13.6799 10.912 13.2754 11.0796C12.871 11.2471 12.4376 11.3333 11.9998 11.3333H9.99984M5.99984 11.3333H3.99984C3.5621 11.3333 3.12864 11.2471 2.72423 11.0796C2.31981 10.912 1.95234 10.6665 1.64281 10.357C1.01769 9.73186 0.666504 8.88401 0.666504 7.99996C0.666504 7.1159 1.01769 6.26806 1.64281 5.64294C2.26794 5.01782 3.11578 4.66663 3.99984 4.66663H5.99984"
+                            stroke="#272343"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M5.3335 8H10.6668"
+                            stroke="#272343"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_283">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="body" class="md:mt-35 mt-50 xl:px-50 lg:px-30 px-10">
+        <div class="flex md:gap-20 md:flex-row flex-col gap-5">
+          <div class="flex flex-col gap-8">
+            <p class="md:text-md text-sm font-poppin text-gray-600 flex gap-2">
+              <span class="text-orange-500"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.49997 18.9999H2.79999C2.3226 18.9999 1.86477 18.8102 1.5272 18.4727C1.18964 18.1351 1 17.6773 1 17.1999V10.8999C1 10.4226 1.18964 9.96472 1.5272 9.62715C1.86477 9.28959 2.3226 9.09995 2.79999 9.09995H5.49997M11.7999 7.29996V3.69998C11.7999 2.9839 11.5155 2.29715 11.0091 1.79081C10.5028 1.28446 9.81603 1 9.09995 1L5.49997 9.09995V18.9999H15.6519C16.086 19.0048 16.5072 18.8527 16.838 18.5715C17.1688 18.2903 17.3868 17.8991 17.4519 17.4699L18.6939 9.36995C18.733 9.11197 18.7156 8.84856 18.6429 8.59798C18.5701 8.34739 18.4438 8.11562 18.2726 7.91872C18.1013 7.72182 17.8894 7.5645 17.6513 7.45765C17.4133 7.35081 17.1548 7.29701 16.8939 7.29996H11.7999Z"
+                    stroke="#FB743E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              24 Likes
+            </p>
+            <p class="md:text-md text-sm font-poppin text-gray-600 flex gap-2">
+              <span class="text-orange-500"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 13C19 13.5304 18.7893 14.0391 18.4142 14.4142C18.0391 14.7893 17.5304 15 17 15H5L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H17C17.5304 1 18.0391 1.21071 18.4142 1.58579C18.7893 1.96086 19 2.46957 19 3V13Z"
+                    fill="white"
+                    stroke="#FB743E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              195 Comments
+            </p>
+          </div>
+          <aside class="md:w-[75%] w-full">
+            <h2 class="lg:text-4xl md:text-3xl text-2xl font-bold font-PTserif">
+              20 web designer skills to have
+            </h2>
+            <p class="mt-5 font-poppin text-gray-600 md:text-lg text-md">
+              Here's a medley of 20 skills to help you become a design expert,
+              no matter where you're at in your career.
+            </p>
+            <div class="mt-5 border-l-4 border-orange-500 p-5">
+              <p class="font-poppin text-gray-600 md:text-xl text-lg">
+                Being a web designer involves harmoniously combining visuals and
+                content. But non-technical skills, like collaboration and
+                communication, are also important.
+              </p>
+            </div>
+            <article>
+              <h3
+                class="md:mt-15 mt-10 font-PTserif font-bold md:text-2xl text-xl"
+              >
+                1. Know the principles of design
+              </h3>
+              <div class="mt-8 w-full h-auto">
+                <img src="./../assets/images/image7.png" alt="table" />
+              </div>
+              <p class="mt-8 font-poppin text-gray-600 md:text-lg text-md">
+                You don’t need to know music theory to write a song, and if
+                you’ve never taken an art class, you can still draw. Some of us
+                might have an innate artistic ability, but knowing the basic
+                fundamentals can make the difference between recreating what you
+                see and being able to build a design that’s calculated and
+                unique.
+              </p>
+              <p class="mt-8 font-poppin text-gray-600 md:text-lg text-md">
+                “<a href="#" class="underline text-blue-500"
+                  >Essential visual design principles</a
+                >” does a deeper dive into the principles of visual design
+                rooted in Gestalt psychology. These fundamentals are the
+                foundation of web and graphic design and important to know.
+                Whether you’re designing a portfolio or a print ad, these
+                concepts can help guide your work. Let’s do a quick recap.
+              </p>
+              <div class="mt-8">
+                <h4 class="font-PTserif text-2xl text-gray-800">Emergence</h4>
+                <p class="mt-3 font-poppin text-gray-600 md:text-lg text-md">
+                  Rather than focusing on individual parts, we tend to process
+                  visual stimuli as a whole. Emergence is seeing an arrangement
+                  of visuals and immediately understanding what they represent.
+                  When something breaks a pattern, we become aware of the pieces
+                  that make it up.
+                </p>
+              </div>
+              <div class="mt-8">
+                <h4 class="font-PTserif text-2xl text-gray-800">Reification</h4>
+                <p class="mt-3 font-poppin text-gray-600 md:text-lg text-md">
+                  Reification is using only the essential parts of an object to
+                  make it identifiable. It lets you exercise restraint in a
+                  design, while still conveying meaning.
+                </p>
+              </div>
+              <div class="mt-8">
+                <h4 class="font-PTserif text-2xl text-gray-800">Invariance</h4>
+                <p class="mt-3 font-poppin text-gray-600 md:text-lg text-md">
+                  Invariance is being able to use tasteful discordance in your
+                  designs, making something stand out from a group of similar
+                  objects. The use of invariance allows you to highlight parts
+                  of a design.
+                </p>
+              </div>
+            </article>
+            <article>
+              <h3
+                class="md:mt-15 mt-10 font-PTserif font-bold md:text-2xl text-xl"
+              >
+                2. Typography
+              </h3>
+              <div class="mt-8 w-full h-auto">
+                <img src="./../assets/images/image8.png" alt="typing" />
+              </div>
+              <p class="mt-8 font-poppin text-gray-600 md:text-lg text-md">
+                Typography shapes our perception of ideas. A type’s weight and
+                geometry communicates meaning, and as a designer, it’s important
+                to know the best way to deliver messaging with the appropriate
+                typographical choices.
+              </p>
+              <p class="mt-8 font-poppin text-gray-600 md:text-lg text-md">
+                All the font options can make it hard for new designers to know
+                what to choose. Practical fonts like Georgia, Verdana, and
+                Roboto work well for body copy, while more decorative typefaces
+                should be used sparingly as ornamentation. Good designers know
+                the difference between type styles and where to use them.
+              </p>
+              <p class="mt-8 font-poppin text-gray-600 md:text-lg text-md">
+                There are plenty of resources on the web to help broaden your
+                typographic knowledge.
+                <a href="" class="text-blue-500 underline">FONTS IN USE</a>
+                shows different typefaces applied to a variety of media. Tools
+                like
+                <a href="" class="text-blue-500 underline"
+                  >Font combinations for web designers</a
+                >
+                can give you ideas for possible pairings.
+              </p>
+            </article>
+            <hr class="text-gray-300 mt-25" />
+            <div
+              class="py-10 md:px-20 sm:px-15 px-5 grid lg:grid-cols-2 grid-cols-1 gap-3"
+            >
+              <button
+                class="basis-auto h-13 text-white bg-[#FB743E] flex justify-center items-center gap-2 font-poppin self-center duration-500 hover:scale-105 active:bg-[#d03636] active:-translate-2"
+              >
+                <span
+                  ><svg
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.14304 18.9999H3.44305C2.96567 18.9999 2.50783 18.8102 2.17027 18.4727C1.83271 18.1351 1.64307 17.6773 1.64307 17.1999V10.8999C1.64307 10.4226 1.83271 9.96472 2.17027 9.62715C2.50783 9.28959 2.96567 9.09995 3.44305 9.09995H6.14304M12.443 7.29996V3.69998C12.443 2.9839 12.1585 2.29715 11.6522 1.79081C11.1458 1.28446 10.4591 1 9.74301 1L6.14304 9.09995V18.9999H16.295C16.7291 19.0048 17.1503 18.8527 17.4811 18.5715C17.8119 18.2903 18.0299 17.8991 18.095 17.4699L19.337 9.36995C19.3761 9.11197 19.3587 8.84856 19.286 8.59798C19.2132 8.34739 19.0868 8.11562 18.9156 7.91872C18.7444 7.72182 18.5324 7.5645 18.2944 7.45765C18.0563 7.35081 17.7979 7.29701 17.537 7.29996H12.443Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg> </span
+                >Like
+              </button>
+              <div class="flex gap-3 items-center">
+                <p class="font-poppin md:text-md text-sm">Share the Post:</p>
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-200 flex justify-center items-center p-4 duration-500 hover:scale-120 hover:bg-gray-300"
+                >
+                  <span
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_269)">
+                        <path
+                          d="M10.6645 2.65667H12.1252V0.112667C11.8732 0.078 11.0065 0 9.99718 0C7.89118 0 6.44851 1.32467 6.44851 3.75933V6H4.12451V8.844H6.44851V16H9.29785V8.84467H11.5278L11.8818 6.00067H9.29718V4.04133C9.29785 3.21933 9.51918 2.65667 10.6645 2.65667Z"
+                          fill="#272343"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_269">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-200 flex justify-center items-center p-4 duration-500 hover:scale-120 hover:bg-gray-300"
+                >
+                  <span
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_273)">
+                        <path
+                          d="M16 3.039C15.405 3.3 14.771 3.473 14.11 3.557C14.79 3.151 15.309 2.513 15.553 1.744C14.919 2.122 14.219 2.389 13.473 2.538C12.871 1.897 12.013 1.5 11.077 1.5C9.261 1.5 7.799 2.974 7.799 4.781C7.799 5.041 7.821 5.291 7.875 5.529C5.148 5.396 2.735 4.089 1.114 2.098C0.831 2.589 0.665 3.151 0.665 3.756C0.665 4.892 1.25 5.899 2.122 6.482C1.595 6.472 1.078 6.319 0.64 6.078C0.64 6.088 0.64 6.101 0.64 6.114C0.64 7.708 1.777 9.032 3.268 9.337C3.001 9.41 2.71 9.445 2.408 9.445C2.198 9.445 1.986 9.433 1.787 9.389C2.212 10.688 3.418 11.643 4.852 11.674C3.736 12.547 2.319 13.073 0.785 13.073C0.516 13.073 0.258 13.061 0 13.028C1.453 13.965 3.175 14.5 5.032 14.5C11.068 14.5 14.368 9.5 14.368 5.166C14.368 5.021 14.363 4.881 14.356 4.742C15.007 4.28 15.554 3.703 16 3.039Z"
+                          fill="#272343"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_273">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-200 flex justify-center items-center p-4 duration-500 hover:scale-120 hover:bg-gray-300"
+                >
+                  <span
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_279)">
+                        <path
+                          d="M8.21733 0C3.83133 0.000666667 1.5 2.81067 1.5 5.87467C1.5 7.29533 2.294 9.068 3.56533 9.63C3.928 9.79333 3.88 9.594 4.192 8.40067C4.21667 8.30133 4.204 8.21533 4.124 8.12267C2.30667 6.02067 3.76933 1.69933 7.958 1.69933C14.02 1.69933 12.8873 10.0873 9.01267 10.0873C8.014 10.0873 7.27 9.30333 7.50533 8.33333C7.79067 7.178 8.34933 5.936 8.34933 5.10333C8.34933 3.00467 5.22267 3.316 5.22267 6.09667C5.22267 6.956 5.52667 7.536 5.52667 7.536C5.52667 7.536 4.52067 11.6 4.334 12.3593C4.018 13.6447 4.37667 15.7253 4.408 15.9047C4.42733 16.0033 4.538 16.0347 4.6 15.9533C4.69933 15.8233 5.91533 14.0887 6.256 12.8347C6.38 12.378 6.88867 10.5247 6.88867 10.5247C7.224 11.13 8.19067 11.6367 9.22067 11.6367C12.2847 11.6367 14.4993 8.94333 14.4993 5.60133C14.4887 2.39733 11.7467 0 8.21733 0V0Z"
+                          fill="#272343"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_279">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-200 flex justify-center items-center p-4 duration-500 hover:scale-120 hover:bg-gray-300"
+                >
+                  <span
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_283)">
+                        <path
+                          d="M9.99984 4.66663H11.9998C12.4376 4.66663 12.871 4.75285 13.2754 4.92036C13.6799 5.08788 14.0473 5.33341 14.3569 5.64294C14.6664 5.95247 14.9119 6.31993 15.0794 6.72435C15.247 7.12877 15.3332 7.56222 15.3332 7.99996C15.3332 8.4377 15.247 8.87115 15.0794 9.27557C14.9119 9.67999 14.6664 10.0475 14.3569 10.357C14.0473 10.6665 13.6799 10.912 13.2754 11.0796C12.871 11.2471 12.4376 11.3333 11.9998 11.3333H9.99984M5.99984 11.3333H3.99984C3.5621 11.3333 3.12864 11.2471 2.72423 11.0796C2.31981 10.912 1.95234 10.6665 1.64281 10.357C1.01769 9.73186 0.666504 8.88401 0.666504 7.99996C0.666504 7.1159 1.01769 6.26806 1.64281 5.64294C2.26794 5.01782 3.11578 4.66663 3.99984 4.66663H5.99984"
+                          stroke="#272343"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M5.3335 8H10.6668"
+                          stroke="#272343"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_283">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <hr class="text-gray-300" />
+          </aside>
+        </div>
+      </section>
+      <section id="recommend" class="xl:px-50 lg:px-30 px-10 py-28">
+        <div class="flex justify-between items-center">
+          <h1 class="font-PTserif font-bold text-3xl">You May Also Like</h1>
+          <a href="#" class="font-poppin text-md font-semibold">View All</a>
+        </div>
+
+        <div class="w-21 h-[3px] bg-orange-500 mt-1 jus"></div>
+        <div class="grid gap-5 md:grid-cols-2 grid-cols-1 mt-10">
+          <article
+            class="overflow-hidden transition basis-auto relative duration-500 hover:-translate-y-3"
+          >
+            <img
+              alt="Office Interior"
+              src="./../assets/images/image2.png"
+              class="w-full object-cover"
+            />
+
+            <div class="p-6 bg-[#f3f3f3] relative -mt-15 ml-0 mr-20">
+              <p
+                class="flex items-center text-[0.8rem] text-gray-500 font-poppin"
+              >
+                <span class="text-[#FB743E] mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 12h14"
+                    />
+                  </svg>
+                </span>
+                Travel
+              </p>
+              <a href="#" class="block">
+                <h3
+                  class="text-2xl text-gray-900 font-PTserif font-bold leading-tight"
+                >
+                  Top 10 beautiful Place in Bangladesh
+                </h3>
+              </a>
+              <p class="mt-2 text-[0.8rem] text-gray-500 font-poppin">
+                March 25, 2021 • 4 min read
+              </p>
+              <a
+                href="#"
+                class="mt-4 inline-flex items-center gap-1 text-sm font-medium font-poppin hover:text-[#FB743E] active:text-red-500"
+              >
+                Read Article
+                <span
+                  aria-hidden="true"
+                  class="transition-transform transform group-hover:translate-x-1"
+                >
+                  &rarr;
+                </span>
+              </a>
+            </div>
+          </article>
+          <article
+            class="overflow-hidden transition basis-auto relative duration-500 hover:-translate-y-3"
+          >
+            <img
+              alt="Office Interior"
+              src="./../assets/images/image2.png"
+              class="w-full object-cover"
+            />
+
+            <div class="p-6 bg-[#f3f3f3] relative -mt-15 ml-0 mr-20">
+              <p
+                class="flex items-center text-[0.8rem] text-gray-500 font-poppin"
+              >
+                <span class="text-[#FB743E] mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 12h14"
+                    />
+                  </svg>
+                </span>
+                Travel
+              </p>
+              <a href="#" class="block">
+                <h3
+                  class="text-2xl text-gray-900 font-PTserif font-bold leading-tight"
+                >
+                  Top 10 beautiful Place in Bangladesh
+                </h3>
+              </a>
+              <p class="mt-2 text-[0.8rem] text-gray-500 font-poppin">
+                March 25, 2021 • 4 min read
+              </p>
+              <a
+                href="#"
+                class="mt-4 inline-flex items-center gap-1 text-sm font-medium font-poppin hover:text-[#FB743E] active:text-red-500"
+              >
+                Read Article
+                <span
+                  aria-hidden="true"
+                  class="transition-transform transform group-hover:translate-x-1"
+                >
+                  &rarr;
+                </span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        id="feedback"
+        class="xl:px-50 lg:px-30 px-10 py-8 flex flex-col items-center"
+      >
+        <article id="comment-form" class="w-[70%]">
+          <h3 class="text-2xl font-PTserif font-semibold">Leave a Comment</h3>
+          <form
+            action=""
+            class="mt-5 grid md:grid-cols-2 grid-cols-1 w-full gap-5"
+          >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name"
+              class="md:text-md text-sm font-poppin text-gray-800 px-5 py-3 bg-[#f0f0f0] basis-auto focus:outline-none focus:ring focus:ring-[#d0d0d0]"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              class="md:text-md text-sm font-poppin text-gray-800 px-5 py-3 bg-[#f0f0f0] basis-auto focus:outline-none focus:ring focus:ring-[#d0d0d0]"
+            />
+            <textarea
+              name="comment"
+              id="comment"
+              class="md:text-md text-sm font-poppin text-gray-800 px-5 py-3 bg-[#f0f0f0] basis-auto focus:outline-none focus:ring focus:ring-[#d0d0d0] md:col-span-2 col-span-1 h-38"
+              placeholder="Your Comments"
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-[#FB743E] px-8 py-3 w-fit h-fit text-white font-poppin text-sm md:col-span-2 col-span-1 justify-self-end duration-500 hover:scale-105 active:bg-[#d03636]"
+            >
+              Post Comment
+            </button>
+          </form>
+        </article>
+        <article
+          id="all-comment"
+          class="flex justify-start w-[70%] flex-col mt-12"
+        >
+          <h3 class="font-PTserif text-2xl font-semibold text-black">
+            Comments <span class="font-normal text-gray-500">(2)</span>
+          </h3>
+          <div class="pt-5">
+            <div class="flex gap-3">
+              <div class="w-[30px] h-[30px] rounded-full bg-[#C4C4C4]"></div>
+              <div>
+                <h4 class="font-poppin text-black text-base">Kevin</h4>
+                <p class="font-poppin text-[#6D7280] text-sm">2 hours ago</p>
+              </div>
+            </div>
+            <p class="mt-2 font-poppin md:text-base text-sm text-[#6D7280]">
+              Donec pellentesque luctus tortor finibus blandit. Fusce tincidunt
+              lectus augue, quis commodo justo tincidunt eget. Praesent at elit
+              diam.
+            </p>
+            <a
+              href="#"
+              class="inline-block mt-2 text-sm font-poppin text-[#494B5C] hover:text-orange-500"
+              >Reply</a
+            >
+            <hr class="text-gray-300 mt-3" />
+          </div>
+          <div class="pt-5">
+            <div class="flex gap-3">
+              <div class="w-[30px] h-[30px] rounded-full bg-[#C4C4C4]"></div>
+              <div>
+                <h4 class="font-poppin text-black text-base">Marry</h4>
+                <p class="font-poppin text-[#6D7280] text-sm">2 hours ago</p>
+              </div>
+            </div>
+            <p class="mt-2 font-poppin md:text-base text-sm text-[#6D7280]">
+              Nulla varius enim eu dui venenatis, nec lacinia urna gravida.
+              Vivamus euismod tincidunt eros at bibendum. Proin lacus dolor,
+              posuere et posuere eu, congue posuere lectus. Suspendisse id lorem
+              egestas, volutpat lacus a, auctor justo. Cras ac elementum arcu,
+              eget ornare massa. Donec eget urna magna. Fusce vestibulum arcu eu
+              libero ullamcorper, nec semper dolor bibendum. Mauris laoreet
+              justo massa, vitae venenatis augue dignissim ac.
+            </p>
+            <a
+              href="#"
+              class="inline-block mt-2 text-sm font-poppin text-[#494B5C] hover:text-orange-500"
+              >Reply</a
+            >
+            <hr class="text-gray-300 mt-3" />
+          </div>
+        </article>
+        <article id="reply-comment" class="w-[70%] mt-5">
+          <h3 class="text-2xl font-PTserif font-semibold">Write a Reply</h3>
+          <form
+            action=""
+            class="mt-5 grid md:grid-cols-2 grid-cols-1 w-full gap-5"
+          >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name"
+              class="md:text-md text-sm font-poppin text-gray-800 px-5 py-3 bg-[#f0f0f0] basis-auto focus:outline-none focus:ring focus:ring-[#d0d0d0]"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              class="md:text-md text-sm font-poppin text-gray-800 px-5 py-3 bg-[#f0f0f0] basis-auto focus:outline-none focus:ring focus:ring-[#d0d0d0]"
+            />
+            <textarea
+              name="comment"
+              id="comment"
+              class="md:text-md text-sm font-poppin text-gray-800 px-5 py-3 bg-[#f0f0f0] basis-auto focus:outline-none focus:ring focus:ring-[#d0d0d0] md:col-span-2 col-span-1 h-38"
+              placeholder="Your Comments"
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-[#FB743E] px-8 py-3 w-fit h-fit text-white font-poppin text-sm md:col-span-2 col-span-1 justify-self-end duration-500 hover:scale-105 active:bg-[#d03636]"
+            >
+              Post Comment
+            </button>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer class="mt-auto bg-[#272343] w-full">
+      <div class="xl:px-50 lg:px-30 px-10 pt-20 pb-10 mx-auto">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6"
+        >
+          <div class="col-span-full lg:col-span-1 xl:col-span-2 px-10">
+            <a href="#" class="text-3xl font-PTserif font-bold text-white">
+              Blog<span class="text-[#FB743E]">y.</span>
+            </a>
+            <p class="text-sm text-gray-400 font-poppin mt-3">
+              Phasellus porttitor sapien a purus venenatis condimentum. Nunc
+              lectus ipsum, laoreet ut efficitur.
+            </p>
+          </div>
+          <div class="col-span-1">
+            <h4 class="text-gray-100 font-PTserif text-xl">Category</h4>
+
+            <div class="mt-4 grid space-y-3">
+              <p>
+                <a
+                  class="font-poppin text-sm inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Travel</a
+                >
+              </p>
+              <p>
+                <a
+                  class="font-poppin text-sm inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Food</a
+                >
+              </p>
+              <p>
+                <a
+                  class="font-poppin text-sm inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Lifestyle</a
+                >
+              </p>
+              <p>
+                <a
+                  class="font-poppin text-sm inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Fashion</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-span-1">
+            <h4 class="text-gray-100 font-PTserif text-xl">Follow us</h4>
+
+            <div class="mt-4 grid space-y-3">
+              <p>
+                <a
+                  class="font-poppin text-sm inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Facebook</a
+                >
+              </p>
+              <p>
+                <a
+                  class="font-poppin text-sm inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Twitter</a
+                >
+              </p>
+              <p>
+                <a
+                  class="font-poppin text-sm inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Instagram</a
+                >
+              </p>
+              <p>
+                <a
+                  class="font-poppin text-sm inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Youtube</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-span-2">
+            <h4 class="font-PTserif text-xl text-gray-100">Newsletter</h4>
+
+            <form>
+              <div class="mt-4 flex gap-2 sm:flex-row sm:gap-3">
+                <div class="bg-[#39345b] w-full">
+                  <input
+                    type="email"
+                    id="hero-input"
+                    name="hero-input"
+                    class="py-3 px-4 block w-full border-transparent text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none text-gray-200 font-poppin"
+                    placeholder="Enter Email"
+                  />
+                </div>
+                <a
+                  class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm border-2 border-[#FB743E] bg-[#FB743E] text-white font-poppin hover:bg-white hover:border-[#FB743E] hover:text-[#FB743E] focus:outline-non disabled:opacity-50 disabled:pointer-events-none"
+                  href="#"
+                >
+                  Subscribe
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <hr class="text-gray-500 mt-5 sm:mt-12" />
+        <div
+          class="mt-2 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center"
+        >
+          <div class="flex justify-between items-center">
+            <p class="text-sm text-gray-400 font-poppin">© 2021 - Blogy</p>
+          </div>
+          <div>
+            <p class="text-sm text-gray-400 font-poppin">
+              Designed & Develop by Zakirsoft
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
